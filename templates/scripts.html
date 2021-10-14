@@ -1,0 +1,9 @@
+{% load static %}
+<script src="{% static 'js/script.js' %}"></script>
+<script src="https://www.whiteboard.team/dist/api.js"></script>
+<script type="text/javascript">
+    var wt = new api.WhiteboardTeam('#wt-container', {
+        clientId: '95ba6104ad9f7031a941f3872d2d9c2c',
+        boardCode: '{{ room.wb_id.wid }}'
+    });
+</script>
